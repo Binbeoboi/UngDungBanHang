@@ -61,6 +61,7 @@
             // 
             // panel6
             // 
+            this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel6.BackColor = System.Drawing.Color.Black;
             this.panel6.Location = new System.Drawing.Point(1303, 40);
             this.panel6.Name = "panel6";
@@ -69,7 +70,7 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.Location = new System.Drawing.Point(1303, 11);
             this.pictureBox4.Name = "pictureBox4";
@@ -85,11 +86,14 @@
             this.txtTimKiemXe.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTimKiemXe.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTimKiemXe.ForeColor = System.Drawing.Color.DarkGray;
-            this.txtTimKiemXe.Location = new System.Drawing.Point(1331, 12);
+            this.txtTimKiemXe.Location = new System.Drawing.Point(1333, 12);
             this.txtTimKiemXe.Name = "txtTimKiemXe";
             this.txtTimKiemXe.Size = new System.Drawing.Size(214, 22);
             this.txtTimKiemXe.TabIndex = 4;
             this.txtTimKiemXe.Text = "  Searching car...";
+            this.txtTimKiemXe.TextChanged += new System.EventHandler(this.txtTimKiemXe_TextChanged);
+            this.txtTimKiemXe.Enter += new System.EventHandler(this.txtTimKiemXe_Enter);
+            this.txtTimKiemXe.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtTimKiemXe_KeyUp);
             // 
             // panel5
             // 

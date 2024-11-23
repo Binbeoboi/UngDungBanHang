@@ -8,7 +8,7 @@ namespace UngDungBanHang.Model
 {
     public class TinhTrang
     {
-        public string Ma{ get; set; }
+        public int Ma{ get; set; }
         public string Ten { get; set; }
     }
 }

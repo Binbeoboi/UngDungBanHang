@@ -3,52 +3,60 @@
   "WorkspaceRootPath": "C:\\Learn\\CSharp Learn\\UngDungBanHang\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BB7FAD43-11A2-4253-B881-25EB71F22545}|UngDungBanHang\\UngDungBanHang.csproj|c:\\learn\\csharp learn\\ungdungbanhang\\ungdungbanhang\\view\\formdonhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BB7FAD43-11A2-4253-B881-25EB71F22545}|UngDungBanHang\\UngDungBanHang.csproj|solutionrelative:ungdungbanhang\\view\\formdonhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{BB7FAD43-11A2-4253-B881-25EB71F22545}|UngDungBanHang\\UngDungBanHang.csproj|c:\\learn\\csharp learn\\ungdungbanhang\\ungdungbanhang\\view\\formthongtinchitietdonhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB7FAD43-11A2-4253-B881-25EB71F22545}|UngDungBanHang\\UngDungBanHang.csproj|solutionrelative:ungdungbanhang\\view\\formthongtinchitietdonhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB7FAD43-11A2-4253-B881-25EB71F22545}|UngDungBanHang\\UngDungBanHang.csproj|c:\\learn\\csharp learn\\ungdungbanhang\\ungdungbanhang\\view\\userdonhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB7FAD43-11A2-4253-B881-25EB71F22545}|UngDungBanHang\\UngDungBanHang.csproj|solutionrelative:ungdungbanhang\\view\\userdonhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BB7FAD43-11A2-4253-B881-25EB71F22545}|UngDungBanHang\\UngDungBanHang.csproj|C:\\Learn\\CSharp Learn\\UngDungBanHang\\ungdungbanhang\\view\\formthongtinchitietdonhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BB7FAD43-11A2-4253-B881-25EB71F22545}|UngDungBanHang\\UngDungBanHang.csproj|solutionrelative:ungdungbanhang\\view\\formthongtinchitietdonhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB7FAD43-11A2-4253-B881-25EB71F22545}|UngDungBanHang\\UngDungBanHang.csproj|c:\\learn\\csharp learn\\ungdungbanhang\\ungdungbanhang\\view\\formdonhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB7FAD43-11A2-4253-B881-25EB71F22545}|UngDungBanHang\\UngDungBanHang.csproj|solutionrelative:ungdungbanhang\\view\\formdonhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BB7FAD43-11A2-4253-B881-25EB71F22545}|UngDungBanHang\\UngDungBanHang.csproj|C:\\Learn\\CSharp Learn\\UngDungBanHang\\ungdungbanhang\\view\\formquanlydonhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB7FAD43-11A2-4253-B881-25EB71F22545}|UngDungBanHang\\UngDungBanHang.csproj|solutionrelative:ungdungbanhang\\view\\formquanlydonhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB7FAD43-11A2-4253-B881-25EB71F22545}|UngDungBanHang\\UngDungBanHang.csproj|C:\\Learn\\CSharp Learn\\UngDungBanHang\\ungdungbanhang\\enum\\enumadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB7FAD43-11A2-4253-B881-25EB71F22545}|UngDungBanHang\\UngDungBanHang.csproj|solutionrelative:ungdungbanhang\\enum\\enumadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB7FAD43-11A2-4253-B881-25EB71F22545}|UngDungBanHang\\UngDungBanHang.csproj|C:\\Learn\\CSharp Learn\\UngDungBanHang\\ungdungbanhang\\enum\\enumhanhdong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB7FAD43-11A2-4253-B881-25EB71F22545}|UngDungBanHang\\UngDungBanHang.csproj|solutionrelative:ungdungbanhang\\enum\\enumhanhdong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB7FAD43-11A2-4253-B881-25EB71F22545}|UngDungBanHang\\UngDungBanHang.csproj|C:\\Learn\\CSharp Learn\\UngDungBanHang\\ungdungbanhang\\view\\formquanlydonhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BB7FAD43-11A2-4253-B881-25EB71F22545}|UngDungBanHang\\UngDungBanHang.csproj|solutionrelative:ungdungbanhang\\view\\formquanlydonhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BB7FAD43-11A2-4253-B881-25EB71F22545}|UngDungBanHang\\UngDungBanHang.csproj|C:\\Learn\\CSharp Learn\\UngDungBanHang\\ungdungbanhang\\controller\\donhangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB7FAD43-11A2-4253-B881-25EB71F22545}|UngDungBanHang\\UngDungBanHang.csproj|solutionrelative:ungdungbanhang\\controller\\donhangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB7FAD43-11A2-4253-B881-25EB71F22545}|UngDungBanHang\\UngDungBanHang.csproj|c:\\learn\\csharp learn\\ungdungbanhang\\ungdungbanhang\\view\\usergiohang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB7FAD43-11A2-4253-B881-25EB71F22545}|UngDungBanHang\\UngDungBanHang.csproj|solutionrelative:ungdungbanhang\\view\\usergiohang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BB7FAD43-11A2-4253-B881-25EB71F22545}|UngDungBanHang\\UngDungBanHang.csproj|C:\\Learn\\CSharp Learn\\UngDungBanHang\\ungdungbanhang\\view\\formthemsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BB7FAD43-11A2-4253-B881-25EB71F22545}|UngDungBanHang\\UngDungBanHang.csproj|solutionrelative:ungdungbanhang\\view\\formthemsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB7FAD43-11A2-4253-B881-25EB71F22545}|UngDungBanHang\\UngDungBanHang.csproj|c:\\learn\\csharp learn\\ungdungbanhang\\ungdungbanhang\\common\\chucnangbosung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB7FAD43-11A2-4253-B881-25EB71F22545}|UngDungBanHang\\UngDungBanHang.csproj|solutionrelative:ungdungbanhang\\common\\chucnangbosung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB7FAD43-11A2-4253-B881-25EB71F22545}|UngDungBanHang\\UngDungBanHang.csproj|c:\\learn\\csharp learn\\ungdungbanhang\\ungdungbanhang\\controller\\nhanviencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB7FAD43-11A2-4253-B881-25EB71F22545}|UngDungBanHang\\UngDungBanHang.csproj|solutionrelative:ungdungbanhang\\controller\\nhanviencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB7FAD43-11A2-4253-B881-25EB71F22545}|UngDungBanHang\\UngDungBanHang.csproj|C:\\Learn\\CSharp Learn\\UngDungBanHang\\ungdungbanhang\\view\\usergiohang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BB7FAD43-11A2-4253-B881-25EB71F22545}|UngDungBanHang\\UngDungBanHang.csproj|solutionrelative:ungdungbanhang\\view\\usergiohang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB7FAD43-11A2-4253-B881-25EB71F22545}|UngDungBanHang\\UngDungBanHang.csproj|C:\\Learn\\CSharp Learn\\UngDungBanHang\\ungdungbanhang\\view\\userdonhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BB7FAD43-11A2-4253-B881-25EB71F22545}|UngDungBanHang\\UngDungBanHang.csproj|solutionrelative:ungdungbanhang\\view\\userdonhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB7FAD43-11A2-4253-B881-25EB71F22545}|UngDungBanHang\\UngDungBanHang.csproj|c:\\learn\\csharp learn\\ungdungbanhang\\ungdungbanhang\\controller\\khachhangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB7FAD43-11A2-4253-B881-25EB71F22545}|UngDungBanHang\\UngDungBanHang.csproj|solutionrelative:ungdungbanhang\\controller\\khachhangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB7FAD43-11A2-4253-B881-25EB71F22545}|UngDungBanHang\\UngDungBanHang.csproj|C:\\Learn\\CSharp Learn\\UngDungBanHang\\ungdungbanhang\\model\\nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB7FAD43-11A2-4253-B881-25EB71F22545}|UngDungBanHang\\UngDungBanHang.csproj|solutionrelative:ungdungbanhang\\model\\nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BB7FAD43-11A2-4253-B881-25EB71F22545}|UngDungBanHang\\UngDungBanHang.csproj|C:\\Learn\\CSharp Learn\\UngDungBanHang\\ungdungbanhang\\view\\formthemsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB7FAD43-11A2-4253-B881-25EB71F22545}|UngDungBanHang\\UngDungBanHang.csproj|solutionrelative:ungdungbanhang\\view\\formthemsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BB7FAD43-11A2-4253-B881-25EB71F22545}|UngDungBanHang\\UngDungBanHang.csproj|C:\\Learn\\CSharp Learn\\UngDungBanHang\\ungdungbanhang\\model\\donhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB7FAD43-11A2-4253-B881-25EB71F22545}|UngDungBanHang\\UngDungBanHang.csproj|solutionrelative:ungdungbanhang\\model\\donhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB7FAD43-11A2-4253-B881-25EB71F22545}|UngDungBanHang\\UngDungBanHang.csproj|C:\\Learn\\CSharp Learn\\UngDungBanHang\\ungdungbanhang\\model\\xe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB7FAD43-11A2-4253-B881-25EB71F22545}|UngDungBanHang\\UngDungBanHang.csproj|solutionrelative:ungdungbanhang\\model\\xe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB7FAD43-11A2-4253-B881-25EB71F22545}|UngDungBanHang\\UngDungBanHang.csproj|C:\\Learn\\CSharp Learn\\UngDungBanHang\\ungdungbanhang\\view\\formchitietsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB7FAD43-11A2-4253-B881-25EB71F22545}|UngDungBanHang\\UngDungBanHang.csproj|solutionrelative:ungdungbanhang\\view\\formchitietsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB7FAD43-11A2-4253-B881-25EB71F22545}|UngDungBanHang\\UngDungBanHang.csproj|C:\\Learn\\CSharp Learn\\UngDungBanHang\\ungdungbanhang\\data\\linkconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB7FAD43-11A2-4253-B881-25EB71F22545}|UngDungBanHang\\UngDungBanHang.csproj|solutionrelative:ungdungbanhang\\data\\linkconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB7FAD43-11A2-4253-B881-25EB71F22545}|UngDungBanHang\\UngDungBanHang.csproj|C:\\Learn\\CSharp Learn\\UngDungBanHang\\ungdungbanhang\\view\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BB7FAD43-11A2-4253-B881-25EB71F22545}|UngDungBanHang\\UngDungBanHang.csproj|solutionrelative:ungdungbanhang\\view\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,7 +66,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 288,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,155 +82,168 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FormDonHang.cs",
-              "DocumentMoniker": "C:\\Learn\\CSharp Learn\\UngDungBanHang\\UngDungBanHang\\View\\FormDonHang.cs",
-              "RelativeDocumentMoniker": "UngDungBanHang\\View\\FormDonHang.cs",
-              "ToolTip": "C:\\Learn\\CSharp Learn\\UngDungBanHang\\UngDungBanHang\\View\\FormDonHang.cs*",
-              "RelativeToolTip": "UngDungBanHang\\View\\FormDonHang.cs*",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB0AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T16:28:42.968Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "NhanVienController.cs",
-              "DocumentMoniker": "C:\\Learn\\CSharp Learn\\UngDungBanHang\\UngDungBanHang\\Controller\\NhanVienController.cs",
-              "RelativeDocumentMoniker": "UngDungBanHang\\Controller\\NhanVienController.cs",
-              "ToolTip": "C:\\Learn\\CSharp Learn\\UngDungBanHang\\UngDungBanHang\\Controller\\NhanVienController.cs",
-              "RelativeToolTip": "UngDungBanHang\\Controller\\NhanVienController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAQwA4AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T16:15:51.913Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ChucNangBoSung.cs",
-              "DocumentMoniker": "C:\\Learn\\CSharp Learn\\UngDungBanHang\\UngDungBanHang\\Common\\ChucNangBoSung.cs",
-              "RelativeDocumentMoniker": "UngDungBanHang\\Common\\ChucNangBoSung.cs",
-              "ToolTip": "C:\\Learn\\CSharp Learn\\UngDungBanHang\\UngDungBanHang\\Common\\ChucNangBoSung.cs",
-              "RelativeToolTip": "UngDungBanHang\\Common\\ChucNangBoSung.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T16:11:40.072Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "UserGioHang.cs",
-              "DocumentMoniker": "C:\\Learn\\CSharp Learn\\UngDungBanHang\\UngDungBanHang\\View\\UserGioHang.cs",
-              "RelativeDocumentMoniker": "UngDungBanHang\\View\\UserGioHang.cs",
-              "ToolTip": "C:\\Learn\\CSharp Learn\\UngDungBanHang\\UngDungBanHang\\View\\UserGioHang.cs",
-              "RelativeToolTip": "UngDungBanHang\\View\\UserGioHang.cs",
-              "ViewState": "AgIAAH4AAAAAAAAAAAAqwIoAAAANAAAAAAAAAA==",
+              "Title": "EnumHanhDong.cs",
+              "DocumentMoniker": "C:\\Learn\\CSharp Learn\\UngDungBanHang\\UngDungBanHang\\Enum\\EnumHanhDong.cs",
+              "RelativeDocumentMoniker": "UngDungBanHang\\Enum\\EnumHanhDong.cs",
+              "ToolTip": "C:\\Learn\\CSharp Learn\\UngDungBanHang\\UngDungBanHang\\Enum\\EnumHanhDong.cs",
+              "RelativeToolTip": "UngDungBanHang\\Enum\\EnumHanhDong.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T16:08:27.842Z",
+              "WhenOpened": "2024-11-18T06:02:45.755Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EnumAdmin.cs",
+              "DocumentMoniker": "C:\\Learn\\CSharp Learn\\UngDungBanHang\\UngDungBanHang\\Enum\\EnumAdmin.cs",
+              "RelativeDocumentMoniker": "UngDungBanHang\\Enum\\EnumAdmin.cs",
+              "ToolTip": "C:\\Learn\\CSharp Learn\\UngDungBanHang\\UngDungBanHang\\Enum\\EnumAdmin.cs",
+              "RelativeToolTip": "UngDungBanHang\\Enum\\EnumAdmin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T06:02:29.782Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormThongTinChiTietDonHang.cs",
+              "DocumentMoniker": "C:\\Learn\\CSharp Learn\\UngDungBanHang\\UngDungBanHang\\View\\FormThongTinChiTietDonHang.cs",
+              "RelativeDocumentMoniker": "UngDungBanHang\\View\\FormThongTinChiTietDonHang.cs",
+              "ToolTip": "C:\\Learn\\CSharp Learn\\UngDungBanHang\\UngDungBanHang\\View\\FormThongTinChiTietDonHang.cs",
+              "RelativeToolTip": "UngDungBanHang\\View\\FormThongTinChiTietDonHang.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAADgv0gAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T05:55:38.105Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "UserDonHang.cs",
-              "DocumentMoniker": "C:\\Learn\\CSharp Learn\\UngDungBanHang\\UngDungBanHang\\View\\UserDonHang.cs",
-              "RelativeDocumentMoniker": "UngDungBanHang\\View\\UserDonHang.cs",
-              "ToolTip": "C:\\Learn\\CSharp Learn\\UngDungBanHang\\UngDungBanHang\\View\\UserDonHang.cs",
-              "RelativeToolTip": "UngDungBanHang\\View\\UserDonHang.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAACIAAABLAAAAAAAAAA==",
+              "Title": "FormThongTinChiTietDonHang.cs [Design]",
+              "DocumentMoniker": "C:\\Learn\\CSharp Learn\\UngDungBanHang\\UngDungBanHang\\View\\FormThongTinChiTietDonHang.cs",
+              "RelativeDocumentMoniker": "UngDungBanHang\\View\\FormThongTinChiTietDonHang.cs",
+              "ToolTip": "C:\\Learn\\CSharp Learn\\UngDungBanHang\\UngDungBanHang\\View\\FormThongTinChiTietDonHang.cs [Design]",
+              "RelativeToolTip": "UngDungBanHang\\View\\FormThongTinChiTietDonHang.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T15:56:54.995Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-18T05:45:53.129Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
+              "Title": "FormQuanLyDonHang.cs",
+              "DocumentMoniker": "C:\\Learn\\CSharp Learn\\UngDungBanHang\\UngDungBanHang\\View\\FormQuanLyDonHang.cs",
+              "RelativeDocumentMoniker": "UngDungBanHang\\View\\FormQuanLyDonHang.cs",
+              "ToolTip": "C:\\Learn\\CSharp Learn\\UngDungBanHang\\UngDungBanHang\\View\\FormQuanLyDonHang.cs",
+              "RelativeToolTip": "UngDungBanHang\\View\\FormQuanLyDonHang.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAewG0AAABrAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T04:04:30.686Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "DonHangController.cs",
               "DocumentMoniker": "C:\\Learn\\CSharp Learn\\UngDungBanHang\\UngDungBanHang\\Controller\\DonHangController.cs",
               "RelativeDocumentMoniker": "UngDungBanHang\\Controller\\DonHangController.cs",
               "ToolTip": "C:\\Learn\\CSharp Learn\\UngDungBanHang\\UngDungBanHang\\Controller\\DonHangController.cs",
               "RelativeToolTip": "UngDungBanHang\\Controller\\DonHangController.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAgwAYAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAgwFEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T15:57:14.427Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-18T04:02:12.96Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 9,
               "Title": "DonHang.cs",
               "DocumentMoniker": "C:\\Learn\\CSharp Learn\\UngDungBanHang\\UngDungBanHang\\Model\\DonHang.cs",
               "RelativeDocumentMoniker": "UngDungBanHang\\Model\\DonHang.cs",
               "ToolTip": "C:\\Learn\\CSharp Learn\\UngDungBanHang\\UngDungBanHang\\Model\\DonHang.cs",
               "RelativeToolTip": "UngDungBanHang\\Model\\DonHang.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAsAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T10:04:42.528Z"
+              "WhenOpened": "2024-11-18T04:00:56.045Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "NhanVien.cs",
-              "DocumentMoniker": "C:\\Learn\\CSharp Learn\\UngDungBanHang\\UngDungBanHang\\Model\\NhanVien.cs",
-              "RelativeDocumentMoniker": "UngDungBanHang\\Model\\NhanVien.cs",
-              "ToolTip": "C:\\Learn\\CSharp Learn\\UngDungBanHang\\UngDungBanHang\\Model\\NhanVien.cs",
-              "RelativeToolTip": "UngDungBanHang\\Model\\NhanVien.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T09:33:50.466Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "KhachHangController.cs",
-              "DocumentMoniker": "C:\\Learn\\CSharp Learn\\UngDungBanHang\\UngDungBanHang\\Controller\\KhachHangController.cs",
-              "RelativeDocumentMoniker": "UngDungBanHang\\Controller\\KhachHangController.cs",
-              "ToolTip": "C:\\Learn\\CSharp Learn\\UngDungBanHang\\UngDungBanHang\\Controller\\KhachHangController.cs",
-              "RelativeToolTip": "UngDungBanHang\\Controller\\KhachHangController.cs",
+              "Title": "Xe.cs",
+              "DocumentMoniker": "C:\\Learn\\CSharp Learn\\UngDungBanHang\\UngDungBanHang\\Model\\Xe.cs",
+              "RelativeDocumentMoniker": "UngDungBanHang\\Model\\Xe.cs",
+              "ToolTip": "C:\\Learn\\CSharp Learn\\UngDungBanHang\\UngDungBanHang\\Model\\Xe.cs",
+              "RelativeToolTip": "UngDungBanHang\\Model\\Xe.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T15:33:05.57Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-18T04:00:48.931Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FormDonHang.cs [Design]",
-              "DocumentMoniker": "C:\\Learn\\CSharp Learn\\UngDungBanHang\\UngDungBanHang\\View\\FormDonHang.cs",
-              "RelativeDocumentMoniker": "UngDungBanHang\\View\\FormDonHang.cs",
-              "ToolTip": "C:\\Learn\\CSharp Learn\\UngDungBanHang\\UngDungBanHang\\View\\FormDonHang.cs [Design]*",
-              "RelativeToolTip": "UngDungBanHang\\View\\FormDonHang.cs [Design]*",
+              "DocumentIndex": 5,
+              "Title": "FormQuanLyDonHang.cs [Design]",
+              "DocumentMoniker": "C:\\Learn\\CSharp Learn\\UngDungBanHang\\UngDungBanHang\\View\\FormQuanLyDonHang.cs",
+              "RelativeDocumentMoniker": "UngDungBanHang\\View\\FormQuanLyDonHang.cs",
+              "ToolTip": "C:\\Learn\\CSharp Learn\\UngDungBanHang\\UngDungBanHang\\View\\FormQuanLyDonHang.cs [Design]",
+              "RelativeToolTip": "UngDungBanHang\\View\\FormQuanLyDonHang.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T03:39:38.065Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-11-18T03:53:05.526Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "UserDonHang.cs [Design]",
-              "DocumentMoniker": "C:\\Learn\\CSharp Learn\\UngDungBanHang\\UngDungBanHang\\View\\UserDonHang.cs",
-              "RelativeDocumentMoniker": "UngDungBanHang\\View\\UserDonHang.cs",
-              "ToolTip": "C:\\Learn\\CSharp Learn\\UngDungBanHang\\UngDungBanHang\\View\\UserDonHang.cs [Design]",
-              "RelativeToolTip": "UngDungBanHang\\View\\UserDonHang.cs [Design]",
+              "Title": "FormThemSanPham.cs",
+              "DocumentMoniker": "C:\\Learn\\CSharp Learn\\UngDungBanHang\\UngDungBanHang\\View\\FormThemSanPham.cs",
+              "RelativeDocumentMoniker": "UngDungBanHang\\View\\FormThemSanPham.cs",
+              "ToolTip": "C:\\Learn\\CSharp Learn\\UngDungBanHang\\UngDungBanHang\\View\\FormThemSanPham.cs",
+              "RelativeToolTip": "UngDungBanHang\\View\\FormThemSanPham.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T03:43:50.422Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-11-16T15:46:53.943Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FormChiTietSanPham.cs",
+              "DocumentMoniker": "C:\\Learn\\CSharp Learn\\UngDungBanHang\\UngDungBanHang\\View\\FormChiTietSanPham.cs",
+              "RelativeDocumentMoniker": "UngDungBanHang\\View\\FormChiTietSanPham.cs",
+              "ToolTip": "C:\\Learn\\CSharp Learn\\UngDungBanHang\\UngDungBanHang\\View\\FormChiTietSanPham.cs",
+              "RelativeToolTip": "UngDungBanHang\\View\\FormChiTietSanPham.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAwwEUAAAB3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T11:43:15.674Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "UserGioHang.cs [Design]",
-              "DocumentMoniker": "C:\\Learn\\CSharp Learn\\UngDungBanHang\\UngDungBanHang\\View\\UserGioHang.cs",
-              "RelativeDocumentMoniker": "UngDungBanHang\\View\\UserGioHang.cs",
-              "ToolTip": "C:\\Learn\\CSharp Learn\\UngDungBanHang\\UngDungBanHang\\View\\UserGioHang.cs [Design]",
-              "RelativeToolTip": "UngDungBanHang\\View\\UserGioHang.cs [Design]",
+              "Title": "FormThemSanPham.cs [Design]",
+              "DocumentMoniker": "C:\\Learn\\CSharp Learn\\UngDungBanHang\\UngDungBanHang\\View\\FormThemSanPham.cs",
+              "RelativeDocumentMoniker": "UngDungBanHang\\View\\FormThemSanPham.cs",
+              "ToolTip": "C:\\Learn\\CSharp Learn\\UngDungBanHang\\UngDungBanHang\\View\\FormThemSanPham.cs [Design]",
+              "RelativeToolTip": "UngDungBanHang\\View\\FormThemSanPham.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T05:57:07.601Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-11-17T11:32:32.456Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LinkConnection.cs",
+              "DocumentMoniker": "C:\\Learn\\CSharp Learn\\UngDungBanHang\\UngDungBanHang\\Data\\LinkConnection.cs",
+              "RelativeDocumentMoniker": "UngDungBanHang\\Data\\LinkConnection.cs",
+              "ToolTip": "C:\\Learn\\CSharp Learn\\UngDungBanHang\\UngDungBanHang\\Data\\LinkConnection.cs",
+              "RelativeToolTip": "UngDungBanHang\\Data\\LinkConnection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T11:41:46.973Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "FormLogin.cs [Design]",
+              "DocumentMoniker": "C:\\Learn\\CSharp Learn\\UngDungBanHang\\UngDungBanHang\\View\\FormLogin.cs",
+              "RelativeDocumentMoniker": "UngDungBanHang\\View\\FormLogin.cs",
+              "ToolTip": "C:\\Learn\\CSharp Learn\\UngDungBanHang\\UngDungBanHang\\View\\FormLogin.cs [Design]",
+              "RelativeToolTip": "UngDungBanHang\\View\\FormLogin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T15:40:00.47Z"
             }
           ]
         },

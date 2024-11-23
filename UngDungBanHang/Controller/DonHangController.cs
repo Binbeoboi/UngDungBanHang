@@ -75,5 +75,10 @@ namespace UngDungBanHang.Controller
                 return cmd.ExecuteNonQuery() == 1;
             }
         }
+
+        public object[] HienThiThongTin(DonHang donHang)
+        {
+            return new object[] { donHang.Ma, donHang.TenXe, donHang.ThoiGian.ToString("dd/MM/yyyy"), donHang.TenNhanVien, donHang.TrangThai, donHang.TenKhachHang };
+        }
     }
 }

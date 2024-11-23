@@ -13,8 +13,9 @@ namespace UngDungBanHang.Controller
     {
         public List<Xe> Get()
         {
-            string query = "SELECT xe.*, tt.Ten, tl.Ten FROM tbXe xe JOIN tbTinhTrang tt ON xe.TinhTrang = tt.Ma " +
-                "JOIN tbTheLoaiXe tl ON xe.HopSo = tl.Ma";
+            string query = "SELECT xe.*, tt.Ten, tl.Ten, hx.Ten FROM tbXe xe JOIN tbTinhTrang tt ON xe.TinhTrang = tt.Ma " +
+                "JOIN tbTheLoaiXe tl ON xe.HopSo = tl.Ma " +
+                "JOIN tbHangXe hx ON xe.HangSanXuat = hx.Ma";
             List<Xe> list = new List<Xe>();
             try
             {
@@ -35,9 +36,10 @@ namespace UngDungBanHang.Controller
                             GiaNhap = reader.GetInt32(6),
                             GiaBan = reader.GetInt32(7),
                             Anh = reader.GetString(8),
-                            HangSanXuat = reader.GetString(9),
+                            HangSanXuat = reader.GetInt32(9),
                             TenHopSo = reader.GetString(10),
                             TenTinhTrang = reader.GetString(11),
+                            TenHangSanXuat = reader.GetString(12)
                         }) ;
                     }
                 }
@@ -114,6 +116,10 @@ namespace UngDungBanHang.Controller
             List<Xe> listXe = new List<Xe>();
             listXe = Get().Where(n => n.Ten.ToLower().Trim().Contains(name.ToLower().Trim())).ToList();
             return listXe;
+        }
+        public object[] HienThiThongTin(Xe xe)
+        {
+            return new object[] { xe.Ma, xe.Ten, xe.TenTinhTrang, xe.TenHopSo, xe.Nam, xe.TenHangSanXuat, xe.SoLuong, xe.GiaNhap.ToString("N0")+"đ", xe.GiaBan.ToString("N0") + "đ" };
         }
     }
 }

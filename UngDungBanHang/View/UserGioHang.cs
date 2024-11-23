@@ -145,7 +145,7 @@ namespace UngDungBanHang.View
                 donhang.ThoiGian = DateTime.Now;
                 donhang.TrangThai = false;
                 donhang.MaKhachHang = kh.Ma;
-                if (donHangController.Them(donhang))
+                if (donHangController.Them(donhang) && gioHangController.Xoa(gioHang.Ma))
                 {
                     MessageBox.Show("Thêm thành công đơn hàng.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     formGioHang.FormGioHang_Load(sender, e);

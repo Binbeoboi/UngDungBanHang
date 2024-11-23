@@ -66,5 +66,20 @@ namespace UngDungBanHang.Controller
                 return cmd.ExecuteNonQuery() == 1;
             }
         }
+        public bool Sua(GioHang gioHang)
+        {
+            string query = "UPDATE tbGioHang SET MaSanPham = @MaSanPham, NgayThang = @NgayThang, MaKhachHang = @MaKhachHang WHERE Ma =  @Ma";
+            using (SqlConnection cnn = Connection.CreateConnection())
+            {
+                SqlCommand cmd = new SqlCommand(query, cnn);
+                cmd.Parameters.AddWithValue("@Ma", gioHang.Ma);
+                cmd.Parameters.AddWithValue("@MaSanPham", gioHang.MaSanPham);
+                cmd.Parameters.AddWithValue("@NgayThang", gioHang.NgayThang.ToString("dd/MM/yyyy"));
+                cmd.Parameters.AddWithValue("@MaKhachHang", gioHang.MaKhachHang);
+
+
+                return cmd.ExecuteNonQuery() == 1;
+            }
+        }
     }
 }

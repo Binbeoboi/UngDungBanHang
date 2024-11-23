@@ -19,6 +19,8 @@ namespace UngDungBanHang.Model
         public string Anh{ get; set; }
         public string TenHopSo { get; set; }
         public string TenTinhTrang { get; set; }
-        public string HangSanXuat {  get; set; }
+        public int HangSanXuat { get; set; }
+        public string TenHangSanXuat { get; set; }
+
     }
 }

@@ -28,18 +28,41 @@ namespace UngDungBanHang.View
 
         private void FormDonHang_Load(object sender, EventArgs e)
         {
-            init();
+            init(controller.Get());
         }
 
-        private void init()
+        private void init(List<DonHang> donHangs)
         {
+            fnlDonHang.Controls.Clear();
             int index = 0;
-            controller.Get().Where(n => n.MaKhachHang == kh.Ma).ToList().ForEach(n =>
+            donHangs.Where(n => n.MaKhachHang == kh.Ma).ToList().ForEach(n =>
             {
                 UserDonHang user = new UserDonHang(n, index);
                 fnlDonHang.Controls.Add(user);
                 index++;
             });
+        }
+
+        private void txtTimKiemXe_Enter(object sender, EventArgs e)
+        {
+            txtTimKiemXe.Text = string.Empty;
+            txtTimKiemXe.ForeColor = Color.Black;
+
+        }
+
+        private void txtTimKiemXe_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtTimKiemXe_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter) 
+            {
+                var ketQua = controller.Get().Where(n => n.TenXe.ToLower().Contains(txtTimKiemXe.Text.ToLower())).ToList();
+                init(ketQua);
+            }
+                
         }
     }
 }

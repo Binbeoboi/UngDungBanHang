@@ -23,3 +23,8 @@ C:\Learn\CSharp Learn\UngDungBanHang\UngDungBanHang\obj\Debug\UngDungBanHang.Vie
 C:\Learn\CSharp Learn\UngDungBanHang\UngDungBanHang\obj\Debug\UngDungBanHang.View.FormThongTinCaNhan.resources
 C:\Learn\CSharp Learn\UngDungBanHang\UngDungBanHang\obj\Debug\UngDungBanHang.View.FormDonHang.resources
 C:\Learn\CSharp Learn\UngDungBanHang\UngDungBanHang\obj\Debug\UngDungBanHang.View.UserDonHang.resources
+C:\Learn\CSharp Learn\UngDungBanHang\UngDungBanHang\obj\Debug\UngDungBanHang.View.FormAdmin.resources
+C:\Learn\CSharp Learn\UngDungBanHang\UngDungBanHang\obj\Debug\UngDungBanHang.View.FormQuanLyXe.resources
+C:\Learn\CSharp Learn\UngDungBanHang\UngDungBanHang\obj\Debug\UngDungBanHang.View.FormThemSanPham.resources
+C:\Learn\CSharp Learn\UngDungBanHang\UngDungBanHang\obj\Debug\UngDungBanHang.View.FormQuanLyDonHang.resources
+C:\Learn\CSharp Learn\UngDungBanHang\UngDungBanHang\obj\Debug\UngDungBanHang.View.FormThongTinChiTietDonHang.resources

@@ -39,6 +39,15 @@ namespace UngDungBanHang.View
             };
             return check;
         }
+        public bool CheckAdmin()
+        {
+            bool check = false;
+            if(txtUserName.Text.Equals("Admin") && txtPassword.Text.Equals("Admin"))
+            {
+                check = true;
+            }
+            return check;
+        }
         private void btnClose_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -139,9 +148,14 @@ namespace UngDungBanHang.View
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if(CheckDangNhap())
+            
+            if(CheckDangNhap() && !CheckAdmin())
             {
                 new Form1(khachHang).ShowDialog();
+            }
+            else if(!CheckDangNhap() && CheckAdmin())
+            {
+                new FormAdmin().ShowDialog();   
             }
             else
             {
