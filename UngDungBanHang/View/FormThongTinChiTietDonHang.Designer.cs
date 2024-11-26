@@ -31,21 +31,21 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormThongTinChiTietDonHang));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlBody = new System.Windows.Forms.Panel();
+            this.dtpThoiGian = new System.Windows.Forms.DateTimePicker();
             this.cbbKhachHang = new System.Windows.Forms.ComboBox();
             this.cbbNhanVien = new System.Windows.Forms.ComboBox();
+            this.cbbTrangThai = new System.Windows.Forms.ComboBox();
             this.cbbTenXe = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtMa = new System.Windows.Forms.TextBox();
             this.btnReset = new System.Windows.Forms.Button();
             this.btnThemSua = new System.Windows.Forms.Button();
             this.ptbSanPham = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.dtpThoiGian = new System.Windows.Forms.DateTimePicker();
-            this.label3 = new System.Windows.Forms.Label();
-            this.cbbTrangThai = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlBody.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbSanPham)).BeginInit();
@@ -86,6 +86,14 @@
             this.pnlBody.Size = new System.Drawing.Size(643, 794);
             this.pnlBody.TabIndex = 4;
             // 
+            // dtpThoiGian
+            // 
+            this.dtpThoiGian.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpThoiGian.Location = new System.Drawing.Point(27, 521);
+            this.dtpThoiGian.Name = "dtpThoiGian";
+            this.dtpThoiGian.Size = new System.Drawing.Size(239, 25);
+            this.dtpThoiGian.TabIndex = 6;
+            // 
             // cbbKhachHang
             // 
             this.cbbKhachHang.DisplayMember = "Ten";
@@ -108,6 +116,20 @@
             this.cbbNhanVien.TabIndex = 4;
             this.cbbNhanVien.ValueMember = "Ma";
             // 
+            // cbbTrangThai
+            // 
+            this.cbbTrangThai.DisplayMember = "Ten";
+            this.cbbTrangThai.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbbTrangThai.FormattingEnabled = true;
+            this.cbbTrangThai.Items.AddRange(new object[] {
+            "Đã hoàn thành",
+            "Chưa hoàn thành"});
+            this.cbbTrangThai.Location = new System.Drawing.Point(391, 434);
+            this.cbbTrangThai.Name = "cbbTrangThai";
+            this.cbbTrangThai.Size = new System.Drawing.Size(235, 25);
+            this.cbbTrangThai.TabIndex = 4;
+            this.cbbTrangThai.ValueMember = "Ma";
+            // 
             // cbbTenXe
             // 
             this.cbbTenXe.DisplayMember = "Ten";
@@ -118,6 +140,17 @@
             this.cbbTenXe.Size = new System.Drawing.Size(235, 25);
             this.cbbTenXe.TabIndex = 4;
             this.cbbTenXe.ValueMember = "Ma";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(387, 410);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(87, 21);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Trạng thái";
             // 
             // label9
             // 
@@ -151,6 +184,17 @@
             this.label5.Size = new System.Drawing.Size(100, 21);
             this.label5.TabIndex = 3;
             this.label5.Text = "Khách hàng";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(23, 497);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(82, 21);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Thời gian";
             // 
             // label1
             // 
@@ -210,50 +254,6 @@
             this.ptbSanPham.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptbSanPham.TabIndex = 0;
             this.ptbSanPham.TabStop = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(23, 497);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 21);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Thời gian";
-            // 
-            // dtpThoiGian
-            // 
-            this.dtpThoiGian.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpThoiGian.Location = new System.Drawing.Point(27, 521);
-            this.dtpThoiGian.Name = "dtpThoiGian";
-            this.dtpThoiGian.Size = new System.Drawing.Size(239, 25);
-            this.dtpThoiGian.TabIndex = 6;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(387, 410);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(87, 21);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Trạng thái";
-            // 
-            // cbbTrangThai
-            // 
-            this.cbbTrangThai.DisplayMember = "Ten";
-            this.cbbTrangThai.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbbTrangThai.FormattingEnabled = true;
-            this.cbbTrangThai.Items.AddRange(new object[] {
-            "False",
-            "True"});
-            this.cbbTrangThai.Location = new System.Drawing.Point(391, 434);
-            this.cbbTrangThai.Name = "cbbTrangThai";
-            this.cbbTrangThai.Size = new System.Drawing.Size(235, 25);
-            this.cbbTrangThai.TabIndex = 4;
-            this.cbbTrangThai.ValueMember = "Ma";
             // 
             // FormThongTinChiTietDonHang
             // 

@@ -16,7 +16,6 @@ namespace UngDungBanHang.Model
         public string SDT{get;set;}
         public string Email{get;set;}
         public int Luong{get;set;}
-        public string Anh{get;set;}
         public int PhongBan{get;set;}
         public int ChucVu{ get; set; }
         public string TenPhongBan { get; set; }

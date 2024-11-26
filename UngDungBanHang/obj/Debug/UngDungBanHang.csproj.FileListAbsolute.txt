@@ -28,3 +28,9 @@ C:\Learn\CSharp Learn\UngDungBanHang\UngDungBanHang\obj\Debug\UngDungBanHang.Vie
 C:\Learn\CSharp Learn\UngDungBanHang\UngDungBanHang\obj\Debug\UngDungBanHang.View.FormThemSanPham.resources
 C:\Learn\CSharp Learn\UngDungBanHang\UngDungBanHang\obj\Debug\UngDungBanHang.View.FormQuanLyDonHang.resources
 C:\Learn\CSharp Learn\UngDungBanHang\UngDungBanHang\obj\Debug\UngDungBanHang.View.FormThongTinChiTietDonHang.resources
+C:\Learn\CSharp Learn\UngDungBanHang\UngDungBanHang\obj\Debug\UngDungBanHang.View.FormNhanVien.resources
+C:\Learn\CSharp Learn\UngDungBanHang\UngDungBanHang\obj\Debug\UngDungBanHang.View.FormThemSuaNhanVien.resources
+C:\Learn\CSharp Learn\UngDungBanHang\UngDungBanHang\obj\Debug\UngDungBanHang.View.FormQuanLyKhachHang.resources
+C:\Learn\CSharp Learn\UngDungBanHang\UngDungBanHang\obj\Debug\UngDungBanHang.View.FormThemSuaKhachHang.resources
+C:\Learn\CSharp Learn\UngDungBanHang\UngDungBanHang\obj\Debug\UngDungBanHang.View.FormThongKe.resources
+C:\Learn\CSharp Learn\UngDungBanHang\UngDungBanHang\obj\Debug\UngDungBanHang.View.FormQuanLyGioHang.resources

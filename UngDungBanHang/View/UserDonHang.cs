@@ -42,5 +42,15 @@ namespace UngDungBanHang.View
             lblMa.Text = donHang.MaXe.ToString();   
             cbTrangThai.Checked = donHang.TrangThai == true ? true : false; 
         }
+
+        private void UserDonHang_MouseEnter(object sender, EventArgs e)
+        {
+            this.BackColor = Color.Gainsboro;
+        }
+
+        private void UserDonHang_MouseLeave(object sender, EventArgs e)
+        {
+            this.BackColor = Color.White;
+        }
     }
 }

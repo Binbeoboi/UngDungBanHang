@@ -38,7 +38,7 @@ namespace UngDungBanHang.View
             txtPassword.Text = kh.Password == null ? "?" : kh.Password;
             txtSDT.Text = kh.Sdt == null ? "?" : kh.Sdt;
             dtpNgaySinh.Value = kh.NgaySinh == null ? DateTime.Now : kh.NgaySinh;
-            ptbAvatar.Image = kh.Anh == "?" ? Image.FromFile($@"{LinkConnection.linkImgIcon}\user.png") : Image.FromFile($@"{LinkConnection.linkImgIcon}\{kh.Anh}");
+            ptbAvatar.Image = Image.FromFile(kh.GioiTinh == "Nam" ? Data.LinkConnection.linkImgIcon + "/user.png" : Data.LinkConnection.linkImgIcon + "/female.png");
             if(kh.GioiTinh.CompareTo("Nam") == 0)
             {
                 rbtnNam.Checked = true;
@@ -81,7 +81,6 @@ namespace UngDungBanHang.View
                 txtName.Enabled = true;
                 txtPassword.Enabled = true;
                 txtSDT.Enabled = true;
-                btnChinhAnh.Enabled = true;
                 btnChinhSua.Text = "Hủy bỏ";
                 btnLuu.Enabled = true;
                 CheckChinhSua = true;
@@ -96,7 +95,6 @@ namespace UngDungBanHang.View
                 txtName.Enabled = false;
                 txtPassword.Enabled = false;
                 txtSDT.Enabled = false;
-                btnChinhAnh.Enabled = false;
                 btnChinhSua.Text = "Chỉnh sửa";
                 btnLuu.Enabled = false;
                 CheckChinhSua = false;
@@ -116,8 +114,7 @@ namespace UngDungBanHang.View
                 Password = txtPassword.Text,
                 NgaySinh = dtpNgaySinh.Value,
                 Email = txtEmail.Text,
-                Sdt = txtSDT.Text,
-                Anh = path == "" ? "?" : path,  
+                Sdt = txtSDT.Text, 
             };
         }
         private void btnLuu_Click(object sender, EventArgs e)
@@ -143,6 +140,22 @@ namespace UngDungBanHang.View
             catch (Exception ex)
             {
                 MessageBox.Show($"Đã có lỗi {ex.Message}.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void txtName_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtSDT_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true; 
             }
         }
     }

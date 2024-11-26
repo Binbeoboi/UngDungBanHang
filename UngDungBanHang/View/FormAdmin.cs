@@ -4,10 +4,12 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using UngDungBanHang.Data;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace UngDungBanHang.View
 {
@@ -17,7 +19,7 @@ namespace UngDungBanHang.View
         {
             InitializeComponent();
         }
-
+        bool checkMax = true;
         private void btnClose_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -116,6 +118,89 @@ namespace UngDungBanHang.View
         {
             FormQuanLyDonHang frm = new FormQuanLyDonHang(this);
             OpenForm(frm);
+        }
+
+        private void FormAdmin_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnNhanVien_Click(object sender, EventArgs e)
+        {
+            FormNhanVien frm = new FormNhanVien(this);
+            OpenForm(frm);
+        }
+
+        private void btnKhachHang_Click(object sender, EventArgs e)
+        {
+            FormQuanLyKhachHang frm = new FormQuanLyKhachHang(this);
+            OpenForm(frm);
+        }
+
+        private void btnThongKe_MouseEnter(object sender, EventArgs e)
+        {
+            btnThongKe.ForeColor = Color.Black;
+            btnThongKe.BackColor = Color.White;
+            btnThongKe.Image = Image.FromFile(LinkConnection.linkImgIcon + "\\line-chart.png");
+        }
+
+        private void btnThongKe_MouseLeave(object sender, EventArgs e)
+        {
+            btnThongKe.BackColor = Color.FromArgb(18, 18, 18);
+            btnThongKe.ForeColor = Color.White;
+            btnThongKe.Image = Image.FromFile(LinkConnection.linkImgIcon + "\\line-chart - Copy.png");
+        }
+
+        private void btnThongKe_Click(object sender, EventArgs e)
+        {
+            FormThongKe form = new FormThongKe();
+            OpenForm(form);
+        }
+
+        private void btnGioHang_Click(object sender, EventArgs e)
+        {
+            FormQuanLyGioHang form = new FormQuanLyGioHang(this);
+            OpenForm(form);
+        }
+
+        private void btnDangXuat_MouseEnter(object sender, EventArgs e)
+        {
+            btnDangXuat.ForeColor = Color.Black;
+            btnDangXuat.BackColor = Color.White;
+            btnDangXuat.Image = Image.FromFile(LinkConnection.linkImgIcon + "\\logout.png");
+        }
+
+        private void btnDangXuat_MouseLeave(object sender, EventArgs e)
+        {
+            btnDangXuat.BackColor = Color.FromArgb(18, 18, 18);
+            btnDangXuat.ForeColor = Color.White;
+            btnDangXuat.Image = Image.FromFile(LinkConnection.linkImgIcon + "\\logout - Copy.png");
+        }
+
+        private void btnDangXuat_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn có muốn đăng xuất không?", "Thông báo", MessageBoxButtons.YesNo) == DialogResult.No) return;
+            this.Close();
+        }
+
+        private void btnMax_Click(object sender, EventArgs e)
+        {
+            if (checkMax)
+            {
+                this.WindowState = FormWindowState.Maximized;
+                checkMax = false;
+            }
+            else
+            {
+                this.WindowState = FormWindowState.Normal;
+                this.Size = new Size(1832, 889);
+                checkMax = true;
+            }
+        }
+
+        private void btnMin_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }

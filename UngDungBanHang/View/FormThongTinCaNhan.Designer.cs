@@ -48,7 +48,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.rbtnNu = new System.Windows.Forms.RadioButton();
             this.rbtnNam = new System.Windows.Forms.RadioButton();
-            this.btnChinhAnh = new System.Windows.Forms.Button();
             this.dtpNgaySinh = new System.Windows.Forms.DateTimePicker();
             this.panel7 = new System.Windows.Forms.Panel();
             this.btnChinhSua = new System.Windows.Forms.Button();
@@ -107,6 +106,7 @@
             this.txtName.TabIndex = 4;
             this.txtName.Text = "Tên";
             this.toolTip1.SetToolTip(this.txtName, "Tên tài khoản");
+            this.txtName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtName_KeyPress);
             // 
             // panel2
             // 
@@ -155,6 +155,7 @@
             this.txtSDT.TabIndex = 4;
             this.txtSDT.Text = "Số điện thoại";
             this.toolTip1.SetToolTip(this.txtSDT, "Số điện thoại");
+            this.txtSDT.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSDT_KeyPress);
             // 
             // panel4
             // 
@@ -210,7 +211,7 @@
             this.ptbAvatar.Image = ((System.Drawing.Image)(resources.GetObject("ptbAvatar.Image")));
             this.ptbAvatar.Location = new System.Drawing.Point(323, 73);
             this.ptbAvatar.Name = "ptbAvatar";
-            this.ptbAvatar.Size = new System.Drawing.Size(280, 279);
+            this.ptbAvatar.Size = new System.Drawing.Size(280, 316);
             this.ptbAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptbAvatar.TabIndex = 5;
             this.ptbAvatar.TabStop = false;
@@ -277,25 +278,6 @@
             this.rbtnNam.TabIndex = 0;
             this.rbtnNam.TabStop = true;
             this.rbtnNam.UseVisualStyleBackColor = true;
-            // 
-            // btnChinhAnh
-            // 
-            this.btnChinhAnh.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnChinhAnh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(135)))), ((int)(((byte)(84)))));
-            this.btnChinhAnh.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnChinhAnh.Enabled = false;
-            this.btnChinhAnh.FlatAppearance.BorderSize = 0;
-            this.btnChinhAnh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnChinhAnh.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnChinhAnh.ForeColor = System.Drawing.Color.White;
-            this.btnChinhAnh.Location = new System.Drawing.Point(323, 367);
-            this.btnChinhAnh.Name = "btnChinhAnh";
-            this.btnChinhAnh.Size = new System.Drawing.Size(280, 35);
-            this.btnChinhAnh.TabIndex = 7;
-            this.btnChinhAnh.Text = "Thêm ảnh";
-            this.toolTip1.SetToolTip(this.btnChinhAnh, "Thêm ảnh đại diện");
-            this.btnChinhAnh.UseVisualStyleBackColor = false;
-            this.btnChinhAnh.Click += new System.EventHandler(this.button1_Click);
             // 
             // dtpNgaySinh
             // 
@@ -367,7 +349,6 @@
             this.Controls.Add(this.dtpNgaySinh);
             this.Controls.Add(this.btnLuu);
             this.Controls.Add(this.btnChinhSua);
-            this.Controls.Add(this.btnChinhAnh);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.ptbAvatar);
             this.Controls.Add(this.txtPassword);
@@ -417,7 +398,6 @@
         private System.Windows.Forms.RadioButton rbtnNu;
         private System.Windows.Forms.RadioButton rbtnNam;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button btnChinhAnh;
         private System.Windows.Forms.DateTimePicker dtpNgaySinh;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Button btnChinhSua;

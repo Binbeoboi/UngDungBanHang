@@ -33,7 +33,6 @@ namespace UngDungBanHang.Controller
                             Sdt = reader.GetString(5),
                             Email = reader.GetString(6),
                             Password = reader.GetString(7),
-                            Anh = reader.GetString(8),
                         });
                     }
                 }
@@ -71,7 +70,7 @@ namespace UngDungBanHang.Controller
 
         public bool Them(KhachHang kh)
         {
-            string query = "INSERT INTO tbKhachHang VALUES(@Ma, @Ten, @GioiTinh, @NgaySinh, @DiaChi, @Sdt, @Email, @Password, @Anh)";
+            string query = "INSERT INTO tbKhachHang VALUES(@Ma, @Ten, @GioiTinh, @NgaySinh, @DiaChi, @Sdt, @Email, @Password)";
             using (SqlConnection cnn = Connection.CreateConnection())
             {
                 SqlCommand cmd = new SqlCommand(query, cnn);
@@ -83,7 +82,6 @@ namespace UngDungBanHang.Controller
                 cmd.Parameters.AddWithValue("@Sdt", kh.Sdt);
                 cmd.Parameters.AddWithValue("@Email", kh.Email);
                 cmd.Parameters.AddWithValue("@Password", kh.Password);
-                cmd.Parameters.AddWithValue("@Anh", kh.Anh);
                 return cmd.ExecuteNonQuery() == 1;
             }
         }
@@ -101,7 +99,7 @@ namespace UngDungBanHang.Controller
 
         public bool Sua(KhachHang kh)
         {
-            string query = "UPDATE tbKhachHang SET Ten = @Ten, GioiTinh = @GioiTinh, NgaySinh = @NgaySinh, DiaChi = @DiaChi, Sdt = @Sdt, Email = @Email, Password = @Password, Anh = @Anh WHERE Ma = @Ma";
+            string query = "UPDATE tbKhachHang SET Ten = @Ten, GioiTinh = @GioiTinh, NgaySinh = @NgaySinh, DiaChi = @DiaChi, Sdt = @Sdt, Email = @Email, Password = @Password WHERE Ma = @Ma";
             using (SqlConnection cnn = Connection.CreateConnection())
             {
                 SqlCommand cmd = new SqlCommand(query, cnn);
@@ -113,7 +111,6 @@ namespace UngDungBanHang.Controller
                 cmd.Parameters.AddWithValue("@Sdt", kh.Sdt);
                 cmd.Parameters.AddWithValue("@Email", kh.Email);
                 cmd.Parameters.AddWithValue("@Password", kh.Password);
-                cmd.Parameters.AddWithValue("@Anh", kh.Anh);
                 return cmd.ExecuteNonQuery() == 1;
             }
         }
@@ -124,5 +121,14 @@ namespace UngDungBanHang.Controller
             kh = Get().SingleOrDefault(n => n.Ma.ToLower().Trim().Equals(id.ToLower().Trim()));
             return kh;
         }
+        public object[] HienThiThongTin(KhachHang kh)
+        {
+            return new object[] {kh.Ma, kh.Ten, kh.GioiTinh, kh.NgaySinh.ToString("dd/MM/yyyy"), kh.DiaChi, kh.Sdt, kh.Email, kh.Password };
+        }
+        public int LayTuoiKhachHang(KhachHang kh)
+        {
+            return DateTime.Now.Year - kh.NgaySinh.Year;
+        }
+        
     }
 }

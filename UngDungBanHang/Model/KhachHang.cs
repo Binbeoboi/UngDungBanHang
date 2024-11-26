@@ -16,7 +16,6 @@ namespace UngDungBanHang.Model
          public string Sdt{get;set;}
          public string Email{get;set;}
          public string Password{get;set;}
-         public string Anh { get; set; }
 
     }
 }

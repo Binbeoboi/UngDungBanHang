@@ -115,6 +115,7 @@ namespace UngDungBanHang
 
         private void button3_Click(object sender, EventArgs e)
         {
+            videoIntro.Ctlcontrols.stop();
             FormGioHang frm = new FormGioHang(this, kh);
             OpenForm(frm);
         }
@@ -135,22 +136,22 @@ namespace UngDungBanHang
         {
             if(e.newState == (int)WMPLib.WMPPlayState.wmppsStopped)
             {
-                //timer1.Start();
+                timer1.Start();
             }
         }
         //418, 244
-        //private void timer1_Tick(object sender, EventArgs e)
-        //{
-            
-        //    if (ptbLogoMain.Location.Y >= 244 && lblTitleMain.Location.Y >= 418)
-        //    {
-        //        ptbLogoMain.Visible = true;
-        //        lblTitleMain.Visible = true;
-        //        ptbLogoMain.Top -= 10;
-        //        lblTitleMain.Top -= 10;
-        //    }
-           
-        //}
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+
+            if (ptbLogoMain.Location.Y >= 244 && lblTitleMain.Location.Y >= 418)
+            {
+                ptbLogoMain.Visible = true;
+                lblTitleMain.Visible = true;
+                ptbLogoMain.Top -= 10;
+                lblTitleMain.Top -= 10;
+            }
+
+        }
 
         private void btnCaNhan_Click(object sender, EventArgs e)
         {
@@ -161,6 +162,7 @@ namespace UngDungBanHang
 
         private void btnDonHang_Click(object sender, EventArgs e)
         {
+            videoIntro.Ctlcontrols.stop();
             FormDonHang frm = new FormDonHang(kh);
             OpenForm(frm);
         }

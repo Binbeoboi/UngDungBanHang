@@ -42,6 +42,9 @@
             this.btnSanPham = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlBody = new System.Windows.Forms.Panel();
+            this.ptbCover = new System.Windows.Forms.PictureBox();
+            this.btnThongKe = new System.Windows.Forms.Button();
+            this.btnDangXuat = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMax)).BeginInit();
@@ -49,6 +52,8 @@
             this.panel2.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pnlBody.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbCover)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -75,6 +80,7 @@
             this.btnMin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnMin.TabIndex = 3;
             this.btnMin.TabStop = false;
+            this.btnMin.Click += new System.EventHandler(this.btnMin_Click);
             // 
             // btnMax
             // 
@@ -88,6 +94,7 @@
             this.btnMax.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnMax.TabIndex = 2;
             this.btnMax.TabStop = false;
+            this.btnMax.Click += new System.EventHandler(this.btnMax_Click);
             // 
             // btnClose
             // 
@@ -115,6 +122,8 @@
             // 
             // panel6
             // 
+            this.panel6.Controls.Add(this.btnDangXuat);
+            this.panel6.Controls.Add(this.btnThongKe);
             this.panel6.Controls.Add(this.btnKhachHang);
             this.panel6.Controls.Add(this.btnNhanVien);
             this.panel6.Controls.Add(this.btnGioHang);
@@ -124,7 +133,7 @@
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel6.Location = new System.Drawing.Point(0, 0);
             this.panel6.Name = "panel6";
-            this.panel6.Padding = new System.Windows.Forms.Padding(5);
+            this.panel6.Padding = new System.Windows.Forms.Padding(5, 5, 5, 30);
             this.panel6.Size = new System.Drawing.Size(297, 864);
             this.panel6.TabIndex = 2;
             // 
@@ -138,13 +147,14 @@
             this.btnKhachHang.ForeColor = System.Drawing.Color.White;
             this.btnKhachHang.Image = ((System.Drawing.Image)(resources.GetObject("btnKhachHang.Image")));
             this.btnKhachHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnKhachHang.Location = new System.Drawing.Point(5, 356);
+            this.btnKhachHang.Location = new System.Drawing.Point(5, 385);
             this.btnKhachHang.Margin = new System.Windows.Forms.Padding(3, 25, 3, 25);
             this.btnKhachHang.Name = "btnKhachHang";
             this.btnKhachHang.Size = new System.Drawing.Size(287, 48);
             this.btnKhachHang.TabIndex = 16;
             this.btnKhachHang.Text = "Khách hàng";
             this.btnKhachHang.UseVisualStyleBackColor = true;
+            this.btnKhachHang.Click += new System.EventHandler(this.btnKhachHang_Click);
             this.btnKhachHang.MouseEnter += new System.EventHandler(this.btnKhachHang_MouseEnter);
             this.btnKhachHang.MouseLeave += new System.EventHandler(this.btnKhachHang_MouseLeave);
             // 
@@ -158,13 +168,14 @@
             this.btnNhanVien.ForeColor = System.Drawing.Color.White;
             this.btnNhanVien.Image = ((System.Drawing.Image)(resources.GetObject("btnNhanVien.Image")));
             this.btnNhanVien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNhanVien.Location = new System.Drawing.Point(5, 308);
+            this.btnNhanVien.Location = new System.Drawing.Point(5, 337);
             this.btnNhanVien.Margin = new System.Windows.Forms.Padding(3, 25, 3, 25);
             this.btnNhanVien.Name = "btnNhanVien";
             this.btnNhanVien.Size = new System.Drawing.Size(287, 48);
             this.btnNhanVien.TabIndex = 15;
             this.btnNhanVien.Text = "Nhân viên";
             this.btnNhanVien.UseVisualStyleBackColor = true;
+            this.btnNhanVien.Click += new System.EventHandler(this.btnNhanVien_Click);
             this.btnNhanVien.MouseEnter += new System.EventHandler(this.btnNhanVien_MouseEnter);
             this.btnNhanVien.MouseLeave += new System.EventHandler(this.btnNhanVien_MouseLeave);
             // 
@@ -178,13 +189,14 @@
             this.btnGioHang.ForeColor = System.Drawing.Color.White;
             this.btnGioHang.Image = ((System.Drawing.Image)(resources.GetObject("btnGioHang.Image")));
             this.btnGioHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGioHang.Location = new System.Drawing.Point(5, 260);
+            this.btnGioHang.Location = new System.Drawing.Point(5, 289);
             this.btnGioHang.Margin = new System.Windows.Forms.Padding(3, 25, 3, 25);
             this.btnGioHang.Name = "btnGioHang";
             this.btnGioHang.Size = new System.Drawing.Size(287, 48);
             this.btnGioHang.TabIndex = 14;
             this.btnGioHang.Text = "Giỏ hàng";
             this.btnGioHang.UseVisualStyleBackColor = true;
+            this.btnGioHang.Click += new System.EventHandler(this.btnGioHang_Click);
             this.btnGioHang.MouseEnter += new System.EventHandler(this.btnGioHang_MouseEnter);
             this.btnGioHang.MouseLeave += new System.EventHandler(this.btnGioHang_MouseLeave);
             // 
@@ -198,7 +210,7 @@
             this.btnDonHang.ForeColor = System.Drawing.Color.White;
             this.btnDonHang.Image = ((System.Drawing.Image)(resources.GetObject("btnDonHang.Image")));
             this.btnDonHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDonHang.Location = new System.Drawing.Point(5, 212);
+            this.btnDonHang.Location = new System.Drawing.Point(5, 241);
             this.btnDonHang.Margin = new System.Windows.Forms.Padding(3, 25, 3, 25);
             this.btnDonHang.Name = "btnDonHang";
             this.btnDonHang.Size = new System.Drawing.Size(287, 48);
@@ -219,7 +231,7 @@
             this.btnSanPham.ForeColor = System.Drawing.Color.White;
             this.btnSanPham.Image = ((System.Drawing.Image)(resources.GetObject("btnSanPham.Image")));
             this.btnSanPham.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSanPham.Location = new System.Drawing.Point(5, 164);
+            this.btnSanPham.Location = new System.Drawing.Point(5, 193);
             this.btnSanPham.Margin = new System.Windows.Forms.Padding(3, 25, 3, 25);
             this.btnSanPham.Name = "btnSanPham";
             this.btnSanPham.Size = new System.Drawing.Size(287, 48);
@@ -237,18 +249,72 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(5, 5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(287, 159);
+            this.pictureBox1.Size = new System.Drawing.Size(287, 188);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // pnlBody
             // 
+            this.pnlBody.Controls.Add(this.ptbCover);
             this.pnlBody.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlBody.Location = new System.Drawing.Point(297, 25);
             this.pnlBody.Name = "pnlBody";
             this.pnlBody.Size = new System.Drawing.Size(1535, 864);
             this.pnlBody.TabIndex = 3;
+            // 
+            // ptbCover
+            // 
+            this.ptbCover.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ptbCover.Image = ((System.Drawing.Image)(resources.GetObject("ptbCover.Image")));
+            this.ptbCover.Location = new System.Drawing.Point(0, 0);
+            this.ptbCover.Name = "ptbCover";
+            this.ptbCover.Size = new System.Drawing.Size(1535, 864);
+            this.ptbCover.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptbCover.TabIndex = 0;
+            this.ptbCover.TabStop = false;
+            // 
+            // btnThongKe
+            // 
+            this.btnThongKe.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnThongKe.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnThongKe.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.btnThongKe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThongKe.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThongKe.ForeColor = System.Drawing.Color.White;
+            this.btnThongKe.Image = ((System.Drawing.Image)(resources.GetObject("btnThongKe.Image")));
+            this.btnThongKe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThongKe.Location = new System.Drawing.Point(5, 433);
+            this.btnThongKe.Margin = new System.Windows.Forms.Padding(3, 25, 3, 25);
+            this.btnThongKe.Name = "btnThongKe";
+            this.btnThongKe.Size = new System.Drawing.Size(287, 48);
+            this.btnThongKe.TabIndex = 17;
+            this.btnThongKe.Text = "Thống kê";
+            this.btnThongKe.UseVisualStyleBackColor = true;
+            this.btnThongKe.Click += new System.EventHandler(this.btnThongKe_Click);
+            this.btnThongKe.MouseEnter += new System.EventHandler(this.btnThongKe_MouseEnter);
+            this.btnThongKe.MouseLeave += new System.EventHandler(this.btnThongKe_MouseLeave);
+            // 
+            // btnDangXuat
+            // 
+            this.btnDangXuat.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDangXuat.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnDangXuat.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.btnDangXuat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDangXuat.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDangXuat.ForeColor = System.Drawing.Color.White;
+            this.btnDangXuat.Image = ((System.Drawing.Image)(resources.GetObject("btnDangXuat.Image")));
+            this.btnDangXuat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDangXuat.Location = new System.Drawing.Point(5, 786);
+            this.btnDangXuat.Margin = new System.Windows.Forms.Padding(3, 25, 3, 25);
+            this.btnDangXuat.Name = "btnDangXuat";
+            this.btnDangXuat.Size = new System.Drawing.Size(287, 48);
+            this.btnDangXuat.TabIndex = 18;
+            this.btnDangXuat.Text = "Đăng xuất";
+            this.btnDangXuat.UseVisualStyleBackColor = true;
+            this.btnDangXuat.Click += new System.EventHandler(this.btnDangXuat_Click);
+            this.btnDangXuat.MouseEnter += new System.EventHandler(this.btnDangXuat_MouseEnter);
+            this.btnDangXuat.MouseLeave += new System.EventHandler(this.btnDangXuat_MouseLeave);
             // 
             // FormAdmin
             // 
@@ -263,6 +329,7 @@
             this.Name = "FormAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormAdmin";
+            this.Load += new System.EventHandler(this.FormAdmin_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnMin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMax)).EndInit();
@@ -270,6 +337,8 @@
             this.panel2.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.pnlBody.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ptbCover)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -289,5 +358,8 @@
         private System.Windows.Forms.Button btnDonHang;
         private System.Windows.Forms.Button btnSanPham;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox ptbCover;
+        private System.Windows.Forms.Button btnThongKe;
+        private System.Windows.Forms.Button btnDangXuat;
     }
 }

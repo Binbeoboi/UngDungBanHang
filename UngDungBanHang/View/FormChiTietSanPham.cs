@@ -58,15 +58,6 @@ namespace UngDungBanHang.View
                 xe = xeController.Tim(maSanPham);
                 btnThemGioHang.Text = "MUA HÀNG";
             }
-            switch (type)
-            {
-                case EnumAdmin.Admin: 
-                    btnThemGioHang.Text = "TRỞ VỀ";
-                    btnThemGioHang.Click -= new EventHandler(btnThemGioHang_Click);
-                    btnThemGioHang.Click += new EventHandler(btnTroVe_Click);
-                    break;
-                default: btnThemGioHang.Visible = false;break;
-            }
             ptbAnhXe.Image = Image.FromFile($@"C:\Learn\CSharp Learn\UngDungBanHang\UngDungBanHang\Img SanPham\{xe.Anh}");
             lblTenXe.Text = xe.Ten;
             lblHangSanXuat.Text = xe.TenHangSanXuat;

@@ -46,7 +46,6 @@
             this.ColXoa = new System.Windows.Forms.DataGridViewButtonColumn();
             this.ColSua = new System.Windows.Forms.DataGridViewButtonColumn();
             this.ColChiTiet = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.dtpThoiGian = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel2.SuspendLayout();
@@ -57,7 +56,6 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.dtpThoiGian);
             this.panel1.Controls.Add(this.txtTimKiemXe);
             this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.pictureBox4);
@@ -130,7 +128,7 @@
             this.dgvDonHang.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(96)))), ((int)(((byte)(130)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(96)))), ((int)(((byte)(130)))));
@@ -230,17 +228,6 @@
             this.ColChiTiet.ToolTipText = "Chi tiết";
             this.ColChiTiet.UseColumnTextForButtonValue = true;
             // 
-            // dtpThoiGian
-            // 
-            this.dtpThoiGian.CustomFormat = "dd/MM/yyyy";
-            this.dtpThoiGian.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpThoiGian.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpThoiGian.Location = new System.Drawing.Point(8, 20);
-            this.dtpThoiGian.Name = "dtpThoiGian";
-            this.dtpThoiGian.Size = new System.Drawing.Size(128, 29);
-            this.dtpThoiGian.TabIndex = 13;
-            this.dtpThoiGian.ValueChanged += new System.EventHandler(this.dtpThoiGian_ValueChanged);
-            // 
             // FormQuanLyDonHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -280,6 +267,5 @@
         private System.Windows.Forms.DataGridViewButtonColumn ColXoa;
         private System.Windows.Forms.DataGridViewButtonColumn ColSua;
         private System.Windows.Forms.DataGridViewButtonColumn ColChiTiet;
-        private System.Windows.Forms.DateTimePicker dtpThoiGian;
     }
 }

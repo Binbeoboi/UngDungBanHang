@@ -73,11 +73,6 @@ namespace UngDungBanHang.View
             HienThiThongTin(data);
         }
 
-        private void dtpThoiGian_ValueChanged(object sender, EventArgs e)
-        {
-            var data = dh.Get().Where(n => n.ThoiGian.ToString("dd/MM/yyyy") == dtpThoiGian.Value.ToString("dd/MM/yyyy")).ToList();
-            HienThiThongTin(data);
-        }
 
         private void dgvDonHang_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -107,7 +102,14 @@ namespace UngDungBanHang.View
             {
                 int id = int.Parse(dgvDonHang.Rows[e.RowIndex].Cells[0].Value.ToString());
                 var data = dh.Get().SingleOrDefault(n => n.Ma == id);
-                FormThongTinChiTietDonHang form = new FormThongTinChiTietDonHang(data, EnumHanhDong.ChiTiet);
+                FormThongTinChiTietDonHang form = new FormThongTinChiTietDonHang(data, frm, EnumHanhDong.ChiTiet);
+                frm.OpenForm(form);
+            }
+            if (e.ColumnIndex == dgvDonHang.Columns["ColSua"].Index)
+            {
+                int id = int.Parse(dgvDonHang.Rows[e.RowIndex].Cells[0].Value.ToString());
+                var data = dh.Get().SingleOrDefault(n => n.Ma == id);
+                FormThongTinChiTietDonHang form = new FormThongTinChiTietDonHang(data, frm, EnumHanhDong.Sua);
                 frm.OpenForm(form);
             }
         }

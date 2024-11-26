@@ -54,7 +54,7 @@ namespace UngDungBanHang.View
         {
             if (e.KeyCode == Keys.Enter) 
             {
-                var ketQua = controller.Get().Where(n => n.MaSanPham.ToLower().Contains(txtTimKiemXe.Text.ToLower())).ToList();
+                var ketQua = txtTimKiemXe.Text == "" ? controller.Get() : controller.Get().Where(n => n.TenXe.ToLower().Contains(txtTimKiemXe.Text.ToLower())).ToList();
                 Init(ketQua);
             }
         }

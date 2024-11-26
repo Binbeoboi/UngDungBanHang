@@ -129,6 +129,8 @@
             this.Name = "UserDonHang";
             this.Size = new System.Drawing.Size(1559, 67);
             this.Load += new System.EventHandler(this.UserDonHang_Load);
+            this.MouseEnter += new System.EventHandler(this.UserDonHang_MouseEnter);
+            this.MouseLeave += new System.EventHandler(this.UserDonHang_MouseLeave);
             ((System.ComponentModel.ISupportInitialize)(this.ptbAnhXe)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

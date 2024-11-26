@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using UngDungBanHang.Controller;
+using UngDungBanHang.Enum;
 using UngDungBanHang.Model;
 
 namespace UngDungBanHang.View
@@ -21,46 +22,82 @@ namespace UngDungBanHang.View
         HopSoController hopSoController = new HopSoController();
         XeController xeController = new XeController();
         string fileAnh = "";
-        public FormThemSanPham()
+        EnumHanhDong type;
+        public FormThemSanPham(EnumHanhDong type)
         {
             InitializeComponent();
+            this.type = type;
         }
         Xe xe = null;
         FormAdmin frm = new FormAdmin();
-        public FormThemSanPham(Xe xe, FormAdmin frm)
+        
+        public FormThemSanPham(Xe xe, FormAdmin frm, EnumHanhDong type)
         {
             InitializeComponent();
             this.xe = xe;
             this.frm = frm;
+            this.type = type;
         }
         private void FormThemSanPham_Load(object sender, EventArgs e)
         {
-            if(xe != null)
-            {
-                txtMa.Text = xe.Ma;
-                txtTenXe.Text = xe.Ten;
-                cbbHopSo.SelectedValue = xe.HopSo;
-                cbbHangXe.SelectedValue = xe.HangSanXuat;
-                cbbTinhTrang.SelectedValue = xe.TinhTrang;
-                nubDoiXe.Value = xe.Nam;
-                nudBan.Value = xe.GiaBan;
-                nudNhap.Value = xe.GiaNhap;
-                nudSoLuong.Value = xe.SoLuong;
-                fileAnh = xe.Anh;
-                ptbSanPham.Image = Image.FromFile(Data.LinkConnection.linkImgSanPham + "\\" + xe.Anh);
-                btnThemSua.Text = "SỬA ĐỔI";
-                btnThemSua.Click -= new EventHandler(btnThemSua_Click);
-                btnThemSua.Click += new EventHandler(btnSua_Click);
-            }
-            else
-            {
-                txtMa.Text = Common.ChucNangBoSung.TaoMaMoi();
-            }
             pnlBody.Parent = imgcover1;
             cbbTinhTrang.DataSource = tinhTrangController.Get();
             cbbHangXe.DataSource = hangXeController.Get();
             cbbHopSo.DataSource = hopSoController.Get();
+            switch (type)
+            {
+                case EnumHanhDong.ChiTiet:
+                    txtMa.Text = xe.Ma;
+                    txtTenXe.Text = xe.Ten;
+                    cbbHopSo.SelectedValue = xe.HopSo;
+                    cbbHangXe.SelectedValue = xe.HangSanXuat;
+                    cbbTinhTrang.SelectedValue = xe.TinhTrang;
+                    nubDoiXe.Value = xe.Nam;
+                    nudBan.Value = xe.GiaBan;
+                    nudNhap.Value = xe.GiaNhap;
+                    nudSoLuong.Value = xe.SoLuong;
+                    fileAnh = xe.Anh;
+                    ptbSanPham.Image = Image.FromFile(Data.LinkConnection.linkImgSanPham + "\\" + xe.Anh);
+                    txtMa.Enabled = false;
+                    txtTenXe.Enabled = false;
+                    cbbHangXe.Enabled = false;
+                    cbbHopSo.Enabled = false;
+                    cbbTinhTrang.Enabled = false;
+                    nubDoiXe.Enabled = false;
+                    nudBan.Enabled = false;
+                    nudNhap.Enabled = false;
+                    nudSoLuong.Enabled = false;
+                    btnOpenAnh.Enabled = false;
+                    btnThemSua.Text = "TRỞ VỀ";
+                    btnThemSua.Click -= new EventHandler(btnThemSua_Click);
+                    btnThemSua.Click += new EventHandler(btnTroVe_Click);
+                    break;
+                case EnumHanhDong.Sua:
+                    txtMa.Text = xe.Ma;
+                    txtTenXe.Text = xe.Ten;
+                    cbbHopSo.SelectedValue = xe.HopSo;
+                    cbbHangXe.SelectedValue = xe.HangSanXuat;
+                    cbbTinhTrang.SelectedValue = xe.TinhTrang;
+                    nubDoiXe.Value = xe.Nam;
+                    nudBan.Value = xe.GiaBan;
+                    nudNhap.Value = xe.GiaNhap;
+                    nudSoLuong.Value = xe.SoLuong;
+                    fileAnh = xe.Anh;
+                    ptbSanPham.Image = Image.FromFile(Data.LinkConnection.linkImgSanPham + "\\" + xe.Anh);
+                    btnThemSua.Text = "SỬA ĐỔI";
+                    btnThemSua.Click -= new EventHandler(btnThemSua_Click);
+                    btnThemSua.Click += new EventHandler(btnSua_Click);
+                    break;
+                case EnumHanhDong.Them:
+                    txtMa.Text = Common.ChucNangBoSung.TaoMaMoi();
+                    break;
+            }
+        }
 
+        private void btnTroVe_Click(object sender, EventArgs e)
+        {
+            FormQuanLyXe form = new FormQuanLyXe(frm);
+            frm.OpenForm(form);
         }
 
         private void btnSua_Click(object sender, EventArgs e)

@@ -33,28 +33,11 @@ namespace UngDungBanHang.Controller
                     nhan.SDT = reader.GetString(5);
                     nhan.Email = reader.GetString(6);
                     nhan.Luong = reader.GetInt32(7);
-                    nhan.Anh = reader.GetString(8);
-                    nhan.PhongBan = reader.GetInt32(9);
-                    nhan.ChucVu = reader.GetInt32(10);
-                    nhan.TenPhongBan = reader.GetString(11);
-                    nhan.TenChucVu = reader.GetString(12);
+                    nhan.PhongBan = reader.GetInt32(8);
+                    nhan.ChucVu = reader.GetInt32(9);
+                    nhan.TenPhongBan = reader.GetString(10);
+                    nhan.TenChucVu = reader.GetString(11);
                     lst.Add(nhan);
-                    //lst.Add(new NhanVien()
-                    //{
-                    //    Ma = reader.GetString(0),
-                    //    Ten = reader.GetString(1),
-                    //    GioiTinh = reader.GetString(2),
-                    //    NgaySinh = DateTime.Parse(reader.GetString(3)),
-                    //    DiaChi = reader.GetString(4),
-                    //    SDT = reader.GetString(5),
-                    //    Email = reader.GetString(6),
-                    //    Luong = int.Parse(reader.GetString(7)),
-                    //    Anh = reader.GetString(8),
-                    //    PhongBan = int.Parse((reader.GetString(9))),
-                    //    ChucVu = int.Parse((reader.GetString(10))),
-                    //    TenPhongBan = reader.GetString(11),
-                    //    TenChucVu  = reader.GetString(12),
-                    //});
                 }
                 return lst;
             }
@@ -62,7 +45,7 @@ namespace UngDungBanHang.Controller
 
         public bool Them(NhanVien nv)
         {
-            string sql = "INSERT INTO tbNhanVien VALUES (@Ma, @Ten, @GioiTinh, @NgaySinh, @DiaChi, @SDT, @Email, @Luong, @Anh, @PhongBan, @ChucVu)";
+            string sql = "INSERT INTO tbNhanVien VALUES (@Ma, @Ten, @GioiTinh, @NgaySinh, @DiaChi, @SDT, @Email, @Luong, @PhongBan, @ChucVu)";
             using(SqlConnection cnn = Connection.CreateConnection())
             {
                 SqlCommand cmd = new SqlCommand(sql, cnn);
@@ -74,7 +57,6 @@ namespace UngDungBanHang.Controller
                 cmd.Parameters.AddWithValue("@SDT", nv.SDT);
                 cmd.Parameters.AddWithValue("@Email", nv.Email);
                 cmd.Parameters.AddWithValue("@Luong", nv.Luong);
-                cmd.Parameters.AddWithValue("@Anh", nv.Anh);
                 cmd.Parameters.AddWithValue("@PhongBan", nv.PhongBan);
                 cmd.Parameters.AddWithValue("@ChucVu", nv.ChucVu);
                 return cmd.ExecuteNonQuery() == 1;
@@ -97,7 +79,7 @@ namespace UngDungBanHang.Controller
             string sql = "UPDATE tbNhanVien SET Ten = @Ten," +
                 " GioiTinh = @GioiTinh, NgaySinh = @NgaySinh," +
                 " DiaChi = @DiaChi, SDT = @SDT, Email = @Email," +
-                " Luong = @Luong, Anh = @Anh, PhongBan = @PhongBan" +
+                " Luong = @Luong, PhongBan = @PhongBan" +
                 ", ChucVu = @ChucVu WHERE Ma = @Ma";
             using (SqlConnection cnn = Connection.CreateConnection())
             {
@@ -110,7 +92,6 @@ namespace UngDungBanHang.Controller
                 cmd.Parameters.AddWithValue("@SDT", nv.SDT);
                 cmd.Parameters.AddWithValue("@Email", nv.Email);
                 cmd.Parameters.AddWithValue("@Luong", nv.Luong);
-                cmd.Parameters.AddWithValue("@Anh", nv.Anh);
                 cmd.Parameters.AddWithValue("@PhongBan", nv.PhongBan);
                 cmd.Parameters.AddWithValue("@ChucVu", nv.ChucVu);
                 return cmd.ExecuteNonQuery() == 1;
@@ -121,6 +102,10 @@ namespace UngDungBanHang.Controller
         {
             NhanVien nv = Get().SingleOrDefault(n => n.Ma.CompareTo(id) == 0);
             return nv != null ? nv : null;
+        }
+        public object[] HienThiThongTin(NhanVien nv)
+        {
+            return new object[] { nv.Ma, nv.Ten, nv.GioiTinh, nv.NgaySinh, nv.DiaChi, nv.SDT, nv.Email, nv.TenPhongBan, nv.TenChucVu, nv.Luong };
         }
     }
 }

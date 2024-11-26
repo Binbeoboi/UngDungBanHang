@@ -50,7 +50,7 @@ namespace UngDungBanHang.View
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            FormThemSanPham form = new FormThemSanPham();
+            FormThemSanPham form = new FormThemSanPham(EnumHanhDong.Them);
             frm.OpenForm(form);
         }
 
@@ -105,14 +105,14 @@ namespace UngDungBanHang.View
             {
                 string id = dgvXe.Rows[e.RowIndex].Cells[0].Value.ToString();
                 Xe xe = xeController.Get().SingleOrDefault(n => n.Ma == id);
-                FormChiTietSanPham form = new FormChiTietSanPham(xe, EnumAdmin.Admin, frm);
+                FormThemSanPham form = new FormThemSanPham(xe, frm, EnumHanhDong.ChiTiet);
                 frm.OpenForm(form);
             }
             else if(e.ColumnIndex == dgvXe.Columns["ColSua"].Index)
             {
                 string id = dgvXe.Rows[e.RowIndex].Cells[0].Value.ToString();
                 Xe xe = xeController.Get().SingleOrDefault(n => n.Ma == id);
-                FormThemSanPham form = new FormThemSanPham(xe, frm);
+                FormThemSanPham form = new FormThemSanPham(xe, frm, EnumHanhDong.Sua);
                 frm.OpenForm(form);
             }
         }

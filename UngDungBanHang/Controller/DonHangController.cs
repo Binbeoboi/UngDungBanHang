@@ -64,7 +64,23 @@ namespace UngDungBanHang.Controller
                 return cmd.ExecuteNonQuery() == 1;
             }
         }
+        public bool Sua(DonHang donHang)
+        {
+            string query = "UPDATE tbDonHang SET MaXe = @MaXe, ThoiGian = @ThoiGian, NhanVienTuVan = @NhanVienTuVan, TrangThai = @TrangThai, MaKhachHang = @MaKhachHang WHERE Ma = @Ma";
+            using (SqlConnection cnn = Connection.CreateConnection())
+            {
+                SqlCommand cmd = new SqlCommand(query, cnn);
+                cmd.Parameters.AddWithValue("@Ma", donHang.Ma);
+                cmd.Parameters.AddWithValue("@MaXe", donHang.MaXe);
+                cmd.Parameters.AddWithValue("@ThoiGian", donHang.ThoiGian.ToString("dd/MM/yyyy"));
+                cmd.Parameters.AddWithValue("@NhanVienTuVan", donHang.NhanVienTuVan);
+                cmd.Parameters.AddWithValue("@TrangThai", donHang.TrangThai);
+                cmd.Parameters.AddWithValue("@MaKhachHang", donHang.MaKhachHang);
 
+
+                return cmd.ExecuteNonQuery() == 1;
+            }
+        }
         public bool Xoa(int id)
         {
             string query = "DELETE FROM tbDonHang WHERE Ma = @Ma";

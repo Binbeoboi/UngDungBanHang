@@ -13,7 +13,8 @@ namespace UngDungBanHang.Controller
     {
         public List<GioHang> Get()
         {
-            string query = "SELECT * FROM tbGioHang";
+            string query = "SELECT gh.*, xe.Ten, kh.Ten FROM tbGioHang gh JOIN tbXe xe ON gh.MaSanPham = xe.Ma" +
+                " JOIN tbKhachHang kh ON gh.MaKhachHang = kh.Ma";
             List<GioHang> list = new List<GioHang>();
             try
             {
@@ -27,8 +28,10 @@ namespace UngDungBanHang.Controller
                         {
                             Ma = reader.GetInt32(0),
                             MaSanPham = reader.GetString(1),
-                            NgayThang = DateTime.Parse(reader.GetString(2)),    
+                            NgayThang = DateTime.Parse(reader.GetString(2)),
                             MaKhachHang = reader.GetString(3),
+                            TenXe = reader.GetString(4),
+                            TenKhachHang = reader.GetString(5)
                         });
                     }
                 }
@@ -80,6 +83,11 @@ namespace UngDungBanHang.Controller
 
                 return cmd.ExecuteNonQuery() == 1;
             }
+        }
+
+        public object[] HienThiThongTin(GioHang gh)
+        {
+            return new object[] { gh.Ma, gh.TenXe, gh.NgayThang, gh.TenKhachHang };
         }
     }
 }

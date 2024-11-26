@@ -12,6 +12,8 @@ namespace UngDungBanHang.Model
         public string MaSanPham{get;set;}
         public DateTime NgayThang{get;set;}
         public string MaKhachHang{ get; set; }
+        public string TenXe {  get; set; }
+        public string TenKhachHang { get; set; }
 
         public GioHang(string maSanPham, DateTime ngayThang, string maKhachHang)
         {
