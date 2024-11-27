@@ -59,7 +59,7 @@ namespace UngDungBanHang.View
         {
             cbbHangXe.Items.Clear();
             cbbHangXe.Items.Add("Tất cả");
-            List<string> lstHangXe = xeController.Get().Select(n => n.HangSanXuat.ToString()).ToList();
+            List<string> lstHangXe = xeController.Get().Select(n => n.TenHangSanXuat.ToString()).ToList();
             HashSet<string> set = new HashSet<string>(lstHangXe);
             foreach (string n in set)
             {
