@@ -38,7 +38,7 @@ namespace UngDungBanHang.View
 
         private void UserGioHang_Load(object sender, EventArgs e)
         {
-            ptbAnhXe.Image = Image.FromFile($@"C:\Learn\CSharp Learn\UngDungBanHang\UngDungBanHang\Img SanPham\{controller.Tim(gioHang.MaSanPham).Anh}");
+            ptbAnhXe.Image = Image.FromFile($@"{Application.StartupPath.Substring(0, Application.StartupPath.Length - 10)}\Img SanPham\{controller.Tim(gioHang.MaSanPham).Anh}");
             lblMa.Text = gioHang.MaSanPham;
             lblTenXe.Text = controller.Tim(gioHang.MaSanPham).Ten;
             lblNgayThang.Text = gioHang.NgayThang.ToString("dd/MM/yyyy");

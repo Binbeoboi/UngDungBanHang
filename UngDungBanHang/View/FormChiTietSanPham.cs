@@ -58,7 +58,7 @@ namespace UngDungBanHang.View
                 xe = xeController.Tim(maSanPham);
                 btnThemGioHang.Text = "MUA HÀNG";
             }
-            ptbAnhXe.Image = Image.FromFile($@"C:\Learn\CSharp Learn\UngDungBanHang\UngDungBanHang\Img SanPham\{xe.Anh}");
+            ptbAnhXe.Image = Image.FromFile($@"{Application.StartupPath.Substring(0, Application.StartupPath.Length - 10)}\Img SanPham\{xe.Anh}");
             lblTenXe.Text = xe.Ten;
             lblHangSanXuat.Text = xe.TenHangSanXuat;
             lblGiaBan.Text = xe.GiaBan.ToString("N0") + " đ";

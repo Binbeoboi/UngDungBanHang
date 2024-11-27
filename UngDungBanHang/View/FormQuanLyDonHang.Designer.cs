@@ -46,6 +46,7 @@
             this.ColXoa = new System.Windows.Forms.DataGridViewButtonColumn();
             this.ColSua = new System.Windows.Forms.DataGridViewButtonColumn();
             this.ColChiTiet = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.ColHopDong = new System.Windows.Forms.DataGridViewButtonColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel2.SuspendLayout();
@@ -145,7 +146,8 @@
             this.ColKhachHang,
             this.ColXoa,
             this.ColSua,
-            this.ColChiTiet});
+            this.ColChiTiet,
+            this.ColHopDong});
             this.dgvDonHang.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvDonHang.EnableHeadersVisualStyles = false;
             this.dgvDonHang.Location = new System.Drawing.Point(3, 21);
@@ -228,6 +230,18 @@
             this.ColChiTiet.ToolTipText = "Chi tiết";
             this.ColChiTiet.UseColumnTextForButtonValue = true;
             // 
+            // ColHopDong
+            // 
+            this.ColHopDong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ColHopDong.HeaderText = "Hợp đồng";
+            this.ColHopDong.Name = "ColHopDong";
+            this.ColHopDong.ReadOnly = true;
+            this.ColHopDong.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.ColHopDong.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.ColHopDong.Text = "Hợp đồng";
+            this.ColHopDong.ToolTipText = "Hợp đồng";
+            this.ColHopDong.UseColumnTextForButtonValue = true;
+            // 
             // FormQuanLyDonHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -267,5 +281,6 @@
         private System.Windows.Forms.DataGridViewButtonColumn ColXoa;
         private System.Windows.Forms.DataGridViewButtonColumn ColSua;
         private System.Windows.Forms.DataGridViewButtonColumn ColChiTiet;
+        private System.Windows.Forms.DataGridViewButtonColumn ColHopDong;
     }
 }

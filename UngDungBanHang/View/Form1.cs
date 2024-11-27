@@ -123,7 +123,7 @@ namespace UngDungBanHang
         private void Form1_Load(object sender, EventArgs e)
         {
             videoIntro.uiMode = "none";
-            videoIntro.URL = $@"C:\Learn\CSharp Learn\UngDungBanHang\UngDungBanHang\VideoIntro\Introducing VinFast Electric Vehicles.mp4";
+            videoIntro.URL = $@"{Application.StartupPath.Substring(0, Application.StartupPath.Length - 10)}\VideoIntro\Introducing VinFast Electric Vehicles.mp4";
         }
 
         private void videoIntro_EndOfStream(object sender, AxWMPLib._WMPOCXEvents_EndOfStreamEvent e)

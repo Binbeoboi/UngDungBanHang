@@ -112,6 +112,13 @@ namespace UngDungBanHang.View
                 FormThongTinChiTietDonHang form = new FormThongTinChiTietDonHang(data, frm, EnumHanhDong.Sua);
                 frm.OpenForm(form);
             }
+            if (e.ColumnIndex == dgvDonHang.Columns["ColHopDong"].Index)
+            {
+                int id = int.Parse(dgvDonHang.Rows[e.RowIndex].Cells[0].Value.ToString());
+                var data = dh.Get().SingleOrDefault(n => n.Ma == id);
+                FormHopDong form = new FormHopDong(data);
+                form.ShowDialog();  
+            }
         }
     }
 }

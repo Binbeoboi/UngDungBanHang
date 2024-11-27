@@ -37,7 +37,7 @@ namespace UngDungBanHang.View
         {
             lblGiaXe.Text = xe.GiaBan.ToString("N0") + "đ";
             lblTenXe.Text = xe.Ten.ToString();
-            ptbCar.Image = Image.FromFile($@"C:\Learn\CSharp Learn\UngDungBanHang\UngDungBanHang\Img SanPham\{xe.Anh}");
+            ptbCar.Image = Image.FromFile($@"{Application.StartupPath.Substring(0, Application.StartupPath.Length - 10)}\Img SanPham\{xe.Anh}");
         }
 
         private void UserCar_MouseHover(object sender, EventArgs e)

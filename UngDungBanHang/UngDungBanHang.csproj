@@ -33,6 +33,24 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Messaging" />
@@ -74,6 +92,7 @@
     <Compile Include="Model\TheLoaiXe.cs" />
     <Compile Include="Model\TinhTrang.cs" />
     <Compile Include="Model\Xe.cs" />
+    <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="View\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +124,12 @@
     </Compile>
     <Compile Include="View\FormGioHang.Designer.cs">
       <DependentUpon>FormGioHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FormHopDong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormHopDong.Designer.cs">
+      <DependentUpon>FormHopDong.cs</DependentUpon>
     </Compile>
     <Compile Include="View\FormLogin.cs">
       <SubType>Form</SubType>
@@ -232,6 +257,9 @@
     <EmbeddedResource Include="View\FormGioHang.resx">
       <DependentUpon>FormGioHang.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\FormHopDong.resx">
+      <DependentUpon>FormHopDong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -274,6 +302,7 @@
     <EmbeddedResource Include="View\FormTrungBayXe.resx">
       <DependentUpon>FormTrungBayXe.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\ReportHopDong.rdlc" />
     <EmbeddedResource Include="View\UserCar.resx">
       <DependentUpon>UserCar.cs</DependentUpon>
     </EmbeddedResource>
@@ -283,6 +312,7 @@
     <EmbeddedResource Include="View\UserGioHang.resx">
       <DependentUpon>UserGioHang.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -320,6 +350,19 @@
     <Content Include="Img icon\tiktok.png" />
     <Content Include="Img icon\user.png" />
     <Content Include="Img icon\youtube.png" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="VideoIntro\Corvette CINEMATIC Car Commercial I Blender.mp4" />
     <Content Include="VideoIntro\Introducing VinFast Electric Vehicles.mp4" />
   </ItemGroup>
