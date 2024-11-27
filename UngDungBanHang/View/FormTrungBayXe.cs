@@ -143,7 +143,7 @@ namespace UngDungBanHang.View
         {
             try
             {
-                List<Xe> lst = xeController.Get().Where(n => n.HangSanXuat.CompareTo(cbbHangXe.Text) == 0).ToList();
+                List<Xe> lst = xeController.Get().Where(n => n.TenHangSanXuat.CompareTo(cbbHangXe.Text) == 0).ToList();
                 
                 if(lst.Count > 0)
                 {
